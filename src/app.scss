@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "webfont";
+  src: url("font/IRANYekanWebBold.ttf") format("truetype"),
+    url("font/IRANYekanWebBold.woff") format("woff"),
+    url("font/IRANYekanWebExtraBold.woff2") format("woff2");
+}
+
+:root {
+  --matncolor: lightgray;
+  --backcolor: #0c0c1d;
+  --liner1: #0c0c1d;
+  --liner2: #111132;
+  --liner3: #505064;
+  --white: white;
+  --black: black;
+  --orange: orange;
+  --colorslidertext: #ffffff09;
+  --gray: gray;
+  --lightgray: rgb(196, 195, 195);
+}
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+input {
+  font-family: webfont;
+}
+textarea {
+  font-family: webfont;
+}
+button {
+  font-family: webfont;
+}
+body {
+  direction: rtl;
+  font-family: webfont;
+  background-color: var(--backcolor);
+  color: var(--matncolor);
+}
+
+body {
+  --sb-track-color: #0c0c1d;
+  --sb-thumb-color: #ffffff;
+  --sb-size: 5px;
+
+  scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 10px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section {
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+@mixin mobile {
+  @media (max-width: 1000px) {
+    @content;
+  }
+}
+@mixin mobile2 {
+  @media (min-width: 520px) and (max-width: 738px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (min-width: 738px) and (max-width: 1000px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: 1001px) and (max-width: 1560px) {
+    @content;
+  }
+}
+@mixin desktop2 {
+  @media (min-width: 1300px) and (max-width: 1560px) {
+    @content;
+  }
+}

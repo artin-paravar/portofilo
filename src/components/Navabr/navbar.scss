@@ -1,0 +1,52 @@
+@import "../../app.scss";
+.navbar {
+  height: 80px;
+  .wrapper {
+    margin: 0 auto;
+    max-width: 1320px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    @include desktop {
+      max-width: 800px;
+    }
+    @include desktop2 {
+      max-width: 1150px;
+    }
+  }
+  .logo > img {
+    width: 90px;
+    height: 90px;
+    margin-top: 20px;
+  }
+  span {
+    font-weight: bolder;
+    font-size: 20px;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  .social > a {
+    margin-top: 10px;
+    display: inline-block;
+  }
+  .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .social > a > img {
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+  }
+  .social > a:nth-child(4) > img {
+    width: 40px;
+    margin: 0;
+    height: 40px;
+  }
+}

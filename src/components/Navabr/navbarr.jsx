@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 const Navbar = () => {
   return (
     <div className="navbar">
-      {/* {sidebar} */}
       <Sidebar />
       <div className="wrapper">
         <motion.span
@@ -21,7 +20,7 @@ const Navbar = () => {
           />
         </motion.span>
         <div className="social">
-          <a href="https://instagram.com/artin._ap?igshid=OGQ5ZDc2ODk2ZA==">
+          <a href="#">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png"
               alt="instagram"
@@ -33,7 +32,7 @@ const Navbar = () => {
               alt="youtube"
             />
           </a>
-          <a href="tel:09363431760">
+          <a href="#">
             <img
               src="https://static.vecteezy.com/system/resources/previews/023/986/679/original/telegram-logo-telegram-logo-transparent-telegram-icon-transparent-free-free-png.png"
               alt="telegram"

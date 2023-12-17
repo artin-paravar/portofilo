@@ -1,18 +1,22 @@
 {
   "files": {
-    "main.css": "/portofilo/static/css/main.2451a74f.css",
-    "main.js": "/portofilo/static/js/main.e45627e5.js",
+    "main.css": "/portofilo/static/css/main.d1ddc205.css",
+    "main.js": "/portofilo/static/js/main.81a50b2b.js",
     "static/media/mountains.png": "/portofilo/static/media/mountains.6bceb498a0e1e0a70b47.png",
+    "static/media/logo artin.png": "/portofilo/static/media/logo artin.aa54cd42063c04fa67d0.png",
     "static/media/IRANYekanWebBold.ttf": "/portofilo/static/media/IRANYekanWebBold.58298bc970c7ebf8fc83.ttf",
     "static/media/stars.png": "/portofilo/static/media/stars.a979f6ed7ad00c7ea0b2.png",
+    "static/media/planets.png": "/portofilo/static/media/planets.827213af57ae82d007cd.png",
+    "static/media/sun.png": "/portofilo/static/media/sun.1122608e12712a52470d.png",
+    "static/media/hero 2.png": "/portofilo/static/media/hero 2.56ae7081152c9b90d5c7.png",
     "static/media/IRANYekanWebBold.woff": "/portofilo/static/media/IRANYekanWebBold.c2639df5c04963849f97.woff",
     "static/media/IRANYekanWebExtraBold.woff2": "/portofilo/static/media/IRANYekanWebExtraBold.9bd63c30be66a923e189.woff2",
     "index.html": "/portofilo/index.html",
-    "main.2451a74f.css.map": "/portofilo/static/css/main.2451a74f.css.map",
-    "main.e45627e5.js.map": "/portofilo/static/js/main.e45627e5.js.map"
+    "main.d1ddc205.css.map": "/portofilo/static/css/main.d1ddc205.css.map",
+    "main.81a50b2b.js.map": "/portofilo/static/js/main.81a50b2b.js.map"
   },
   "entrypoints": [
-    "static/css/main.2451a74f.css",
-    "static/js/main.e45627e5.js"
+    "static/css/main.d1ddc205.css",
+    "static/js/main.81a50b2b.js"
   ]
 }

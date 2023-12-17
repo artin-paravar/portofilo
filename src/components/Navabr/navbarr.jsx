@@ -1,7 +1,7 @@
 import "./navbar.scss";
 import Sidebar from "../Sidbar/sIdebarr.jsx";
 import { motion } from "framer-motion";
-import LOGO from "./logo artin.png";
+// import LOGO from "./logo artin.png";
 
 const Navbar = () => {
   return (
@@ -15,7 +15,10 @@ const Navbar = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <img src={LOGO} alt="" />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png"
+            alt=""
+          />
         </motion.span>
         <div className="social">
           <a href="https://instagram.com/artin._ap?igshid=OGQ5ZDc2ODk2ZA==">

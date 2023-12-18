@@ -2,6 +2,9 @@ import "./navbar.scss";
 import Sidebar from "../Sidbar/sIdebarr.jsx";
 import { motion } from "framer-motion";
 import LOGO from "./logo artin.png";
+import { WiMoonWaningCrescent3 } from "react-icons/wi";
+import { WiSunrise } from "react-icons/wi";
+import DarkMode from "../../DarkMode/DarkMode.jsx";
 
 const Navbar = () => {
   return (

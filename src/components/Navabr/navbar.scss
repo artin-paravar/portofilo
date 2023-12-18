@@ -1,6 +1,7 @@
 @import "../../app.scss";
 .navbar {
   height: 80px;
+  background-color: var(--backcolornav);
   .wrapper {
     margin: 0 auto;
     max-width: 1320px;
@@ -9,6 +10,9 @@
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    input {
+      display: none;
+    }
     @include desktop {
       max-width: 800px;
     }

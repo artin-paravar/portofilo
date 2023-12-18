@@ -3,6 +3,7 @@ import Toggle from "./toggle/toggle";
 import Links from "./links/link";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import DarkMode from "../../DarkMode/DarkMode";
 const Sidbar = () => {
   const [open, setOpen] = useState(false);
   const varintes = {
@@ -31,6 +32,7 @@ const Sidbar = () => {
         variants={varintes}
       >
         <Links />
+        <DarkMode />
       </motion.div>
       <Toggle setOpen={setOpen} open={open} />
     </motion.div>

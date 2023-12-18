@@ -8,6 +8,9 @@
 :root {
   --matncolor: lightgray;
   --backcolor: #0c0c1d;
+  --backcolornav: #0c0c1d;
+
+  --portofolio: #0c0c1d;
   --liner1: #0c0c1d;
   --liner2: #111132;
   --liner3: #505064;
@@ -17,6 +20,21 @@
   --colorslidertext: #ffffff09;
   --gray: gray;
   --lightgray: rgb(196, 195, 195);
+}
+[data-theme="light"] {
+  --portofolio: rgb(219, 218, 218);
+  --matncolor: rgb(51, 51, 51);
+  --backcolor: rgb(219, 218, 218);
+  --backcolornav: rgba(126, 124, 124, 0.801);
+  --liner1: rgba(126, 124, 124, 0.801);
+  --liner2: white;
+  --liner3: #6d6b6b;
+  --white: rgb(43, 43, 43);
+  --black: white;
+  --orange: rgb(255, 166, 0);
+  --colorslidertext: rgba(196, 196, 196, 0.377);
+  --gray: rgb(51, 51, 51);
+  --lightgray: rgb(94, 94, 94);
 }
 html {
   scroll-snap-type: y mandatory;

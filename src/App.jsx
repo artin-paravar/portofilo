@@ -9,6 +9,7 @@ const App = () => {
   return (
     <div>
       <section id="صفحه اصلی">
+        <setLidthmode />
         <Navbar />
         <Hero />
       </section>

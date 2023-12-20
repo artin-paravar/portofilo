@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import "./contact.scss";
+import { useState } from "react";
 const variants = {
   initial: {
     x: 500,
@@ -15,6 +16,21 @@ const variants = {
   },
 };
 const Contact = () => {
+  const [values, setValues] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const handlesubmit = (e) => {
+    e.preventDefault();
+  };
+  const onChange = (e) => {
+    setValues(() => ({
+      ...values,
+      [e.target.name]: e.target.value,
+    }));
+    // console.log(values);
+  };
   return (
     <motion.div
       className="contact"
@@ -50,14 +66,32 @@ const Contact = () => {
           />
         </motion.div>
         <motion.form
+          onSubmit={handlesubmit}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 1.9, duration: 1 }}
         >
-          <input type="text" required placeholder="اسم" />
-          <input type="email" required placeholder="ایمیل" />
-          <textarea rows={8} placeholder="پیام" />
-          <button>ارسال پیام</button>
+          <input
+            type="text"
+            required
+            name="name"
+            placeholder="اسم"
+            onChange={onChange}
+          />
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="ایمیل"
+            onChange={onChange}
+          />
+          <textarea
+            rows={8}
+            placeholder="پیام"
+            onChange={onChange}
+            name="message"
+          />
+          <button onClick={() => console.log(values)}>ارسال پیام</button>
         </motion.form>
       </div>
     </motion.div>

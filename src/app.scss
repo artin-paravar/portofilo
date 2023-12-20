@@ -96,6 +96,26 @@ section {
     @content;
   }
 }
+@mixin sevicestext {
+  @media (min-width: 320px) and (max-width: 370px) {
+    @content;
+  }
+}
+@mixin slider {
+  @media (max-width: 730px) {
+    @content;
+  }
+}
+@mixin card {
+  @media (min-width: 320px) and (max-width: 480px) {
+    @content;
+  }
+}
+@mixin card2 {
+  @media (min-width: 376px) and (max-width: 480px) {
+    @content;
+  }
+}
 @mixin mobile2 {
   @media (min-width: 520px) and (max-width: 738px) {
     @content;

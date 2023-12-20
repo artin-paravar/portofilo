@@ -4,6 +4,7 @@
   height: calc(100vh - 80px);
   overflow: hidden;
   position: relative;
+
   background: linear-gradient(180deg, var(--liner1), var(--liner2));
 }
 .wrapper {
@@ -67,13 +68,13 @@
     }
   }
   h1 {
-    font-size: 60px;
+    font-size: 40px;
     @include mobile {
-      font-size: 35px;
+      font-size: 24px;
       z-index: 1;
     }
     @include desktop {
-      font-size: 50px;
+      font-size: 30px;
     }
   }
 }

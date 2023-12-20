@@ -4,12 +4,12 @@ import Services from "./components/services/servicess.jsx";
 import Parallax from "./components/parallax/parallaxx.jsx";
 import Contact from "./components/contact/contactt.jsx";
 import Portofilo from "./components/portofilo/portofiloo.jsx";
+import React from "react";
 
 const App = () => {
   return (
     <div>
       <section id="صفحه اصلی">
-        <setLidthmode />
         <Navbar />
         <Hero />
       </section>

@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import "./hero.scss";
 import HERO from "../../img/hero 2.png";
 import SCROLL from "../../img/scroll.png";
+import TypeWriterEffect from "react-typewriter-effect";
+
 const textvarintes = {
   initial: {
     x: -500,
@@ -48,9 +50,24 @@ const Hero = () => {
           animate="animate"
         >
           <div className="tanzim">
-            <motion.h1 variants={textvarintes}>
-              طراح وب سایت و هیچی ):{" "}
-            </motion.h1>
+            <h1 variants={textvarintes}>
+              <TypeWriterEffect
+                textStyle={{
+                  color: "#fff",
+                  fontWeight: 500,
+                  fontSize: "1.5em",
+                }}
+                startDelay={900}
+                cursorColor="#fff"
+                multiText={[
+                  " طراح UI/UX (: ",
+                  "توسعه دهنده (:",
+                  "طراح وب سایت (:",
+                ]}
+                typeSpeed={40}
+              />
+            </h1>
+
             <motion.button variants={textvarintes}>ارتباط با من</motion.button>
             <motion.img
               variants={textvarintes}

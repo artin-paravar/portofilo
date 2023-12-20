@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portofilo/static/css/main.d2b08eeb.css",
-    "main.js": "/portofilo/static/js/main.e1c8142f.js",
+    "main.css": "/portofilo/static/css/main.1fd0b4ba.css",
+    "main.js": "/portofilo/static/js/main.7ce3df9c.js",
     "static/media/mountains.png": "/portofilo/static/media/mountains.6bceb498a0e1e0a70b47.png",
     "static/media/logo artin.png": "/portofilo/static/media/logo artin.aa54cd42063c04fa67d0.png",
     "static/media/IRANYekanWebBold.ttf": "/portofilo/static/media/IRANYekanWebBold.58298bc970c7ebf8fc83.ttf",
@@ -14,11 +14,11 @@
     "static/media/Sun.svg": "/portofilo/static/media/Sun.af947515dc3d9c7eb70ce4ffe6f0279a.svg",
     "index.html": "/portofilo/index.html",
     "static/media/Moon.svg": "/portofilo/static/media/Moon.921c1ab592145141460cffb339ab47ca.svg",
-    "main.d2b08eeb.css.map": "/portofilo/static/css/main.d2b08eeb.css.map",
-    "main.e1c8142f.js.map": "/portofilo/static/js/main.e1c8142f.js.map"
+    "main.1fd0b4ba.css.map": "/portofilo/static/css/main.1fd0b4ba.css.map",
+    "main.7ce3df9c.js.map": "/portofilo/static/js/main.7ce3df9c.js.map"
   },
   "entrypoints": [
-    "static/css/main.d2b08eeb.css",
-    "static/js/main.e1c8142f.js"
+    "static/css/main.1fd0b4ba.css",
+    "static/js/main.7ce3df9c.js"
   ]
 }

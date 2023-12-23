@@ -5,10 +5,11 @@ import Parallax from "./components/parallax/parallaxx.jsx";
 import Contact from "./components/contact/contactt.jsx";
 import Portofilo from "./components/portofilo/portofiloo.jsx";
 import React from "react";
-
+import Cursor from "./components/cursor/cursor.jsx";
 const App = () => {
   return (
     <div>
+      <Cursor />
       <section id="صفحه اصلی">
         <Navbar />
         <Hero />

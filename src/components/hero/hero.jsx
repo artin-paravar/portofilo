@@ -53,12 +53,11 @@ const Hero = () => {
             <h1 variants={textvarintes}>
               <TypeWriterEffect
                 textStyle={{
-                  color: "#fff",
                   fontWeight: 500,
                   fontSize: "1.5em",
                 }}
                 startDelay={900}
-                cursorColor="#fff"
+                cursorColor="white"
                 multiText={[
                   " طراح UI/UX (: ",
                   "توسعه دهنده (:",

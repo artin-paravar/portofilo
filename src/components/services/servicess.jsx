@@ -4,7 +4,7 @@ import { SlArrowRight } from "react-icons/sl";
 import { SlArrowLeft } from "react-icons/sl";
 import { useState } from "react";
 
-const Services = () => {
+const Services = ({ textenter, textleave }) => {
   const [slide, setslide] = useState(0);
 
   const variants = {
@@ -61,12 +61,12 @@ const Services = () => {
             src="https://www.weresc.com/wp-content/uploads/2023/01/web.jpg"
             alt=""
           />
-          <motion.h1>
+          <motion.h1 onMouseEnter={textenter} onMouseLeave={textleave}>
             <b>طراحی</b> وب سایت
           </motion.h1>
         </div>
         <div className="title">
-          <motion.h1>
+          <motion.h1 onMouseEnter={textenter} onMouseLeave={textleave}>
             <b>برای</b> بیزنس شما!
           </motion.h1>
           <button>ما چیکار میکنیم؟</button>

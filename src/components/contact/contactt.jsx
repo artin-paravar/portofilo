@@ -15,7 +15,7 @@ const variants = {
     },
   },
 };
-const Contact = () => {
+const Contact = ({ textenter, textleave }) => {
   const [values, setValues] = useState({
     name: "",
     email: "",
@@ -39,17 +39,29 @@ const Contact = () => {
       whileInView="animate"
     >
       <motion.div className="textContainer" variants={variants}>
-        <motion.h1 variants={variants}>ارتباط با من</motion.h1>
+        <motion.h1
+          onMouseEnter={textenter}
+          onMouseLeave={textleave}
+          variants={variants}
+        >
+          ارتباط با من
+        </motion.h1>
         <motion.div variants={variants} className="item">
-          <h2>ایمیل</h2>
+          <h2 onMouseEnter={textenter} onMouseLeave={textleave}>
+            ایمیل
+          </h2>
           <span>artinparavar@gmail.com</span>
         </motion.div>
         <motion.div variants={variants} className="item">
-          <h2>ادرس</h2>
+          <h2 onMouseEnter={textenter} onMouseLeave={textleave}>
+            ادرس
+          </h2>
           <span>همه جا هستم</span>
         </motion.div>
         <motion.div variants={variants} className="item">
-          <h2>شماره تلفن</h2>
+          <h2 onMouseEnter={textenter} onMouseLeave={textleave}>
+            شماره تلفن
+          </h2>
           <span>1760 343 0936</span>
         </motion.div>
       </motion.div>

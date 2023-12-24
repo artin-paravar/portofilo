@@ -27,7 +27,7 @@ const items = [
     desc: "لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد. معمولا طراحان گرافیک برای صفحه‌آرایی، نخست از متن‌های آزمایشی و بی‌معنی استفاده می‌کنند تا صرفا به مشتری یا صاحب کار خود نشان دهند که صفحه طراحی یا صفحه بندی شده بعد از اینکه متن در آن قرار گیرد چگونه به نظر می‌رسد و قلم‌ها و اندازه‌بندی‌ها چگونه در نظر گرفته شده‌است",
   },
 ];
-const Single = ({ item }) => {
+const Single = ({ item, textenter, textleave }) => {
   const ref = useRef();
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -41,8 +41,12 @@ const Single = ({ item }) => {
             <img src={item.img} alt="" ref={ref} />
           </div>
           <motion.div className="textcontainer" style={{ y }}>
-            <h2>{item.title}</h2>
-            <p>{item.desc}</p>
+            <h2 onMouseEnter={textenter} onMouseLeave={textleave}>
+              {item.title}
+            </h2>
+            <p onMouseEnter={textenter} onMouseLeave={textleave}>
+              {item.desc}
+            </p>
             <button>مشاهده</button>
           </motion.div>
         </div>
@@ -50,7 +54,7 @@ const Single = ({ item }) => {
     </section>
   );
 };
-const Portofilo = () => {
+const Portofilo = ({ textenter, textleave }) => {
   const ref = useRef();
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -67,7 +71,12 @@ const Portofilo = () => {
         <motion.div style={{ scaleX }} className="progressbar"></motion.div>
       </div>
       {items.map((item) => (
-        <Single item={item} key={item.id} />
+        <Single
+          item={item}
+          key={item.id}
+          textenter={textenter}
+          textleave={textleave}
+        />
       ))}
     </div>
   );

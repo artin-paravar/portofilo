@@ -39,7 +39,7 @@ const textbottomvarintes = {
     },
   },
 };
-const Hero = () => {
+const Hero = ({ textenter, textleave }) => {
   return (
     <div className="hero">
       <div className="wrapper">
@@ -50,7 +50,7 @@ const Hero = () => {
           animate="animate"
         >
           <div className="tanzim">
-            <h1 variants={textvarintes}>
+            <h1 onMouseEnter={textenter} onMouseLeave={textleave}>
               <TypeWriterEffect
                 textStyle={{
                   fontWeight: 500,

@@ -3,7 +3,7 @@ import "./parallax.scss";
 import SUN from "./sun.png";
 import PLANETS from "./planets.png";
 import { motion, useScroll, useTransform } from "framer-motion";
-const Parllax = ({ type }) => {
+const Parllax = ({ type, textenter, textleave }) => {
   const ref = useRef();
 
   const { scrollYProgress } = useScroll({
@@ -25,7 +25,11 @@ const Parllax = ({ type }) => {
             : "linear-gradient(180deg, var(--liner2), var(--liner3))",
       }}
     >
-      <motion.h1 style={{ y: ytext }}>
+      <motion.h1
+        onMouseEnter={textenter}
+        onMouseLeave={textleave}
+        style={{ y: ytext }}
+      >
         {type === "services" ? "ما چیکار میکنیم ؟" : "ما چیکار کردیم؟"}
       </motion.h1>
       <motion.div className="mountains"></motion.div>

@@ -44,7 +44,7 @@ const App = () => {
         className="cursor"
         animate={cursorvarint}
         variants={variants}
-        transition={{ transition: 0 }}
+        transition={{ transition: 0, duration: 0.1 }}
       ></motion.div>
       <section id="صفحه اصلی">
         <Navbar />

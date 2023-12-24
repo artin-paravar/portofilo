@@ -10,6 +10,7 @@
   position: fixed;
   pointer-events: none;
   z-index: 101;
+  transition: none !important;
   @include mobile {
     display: none;
     visibility: hidden;

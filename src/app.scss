@@ -90,7 +90,18 @@ section {
   height: 100vh;
   scroll-snap-align: center;
 }
-
+.preloader {
+  width: 100%;
+  height: 100%;
+  background-color: #0c0c1d;
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 @mixin mobile {
   @media (max-width: 1000px) {
     @content;

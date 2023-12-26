@@ -9,7 +9,7 @@
   animation: aha 4s ease infinite;
   position: fixed;
   pointer-events: none;
-  z-index: 101;
+  z-index: 999;
   transition: none !important;
   @include mobile {
     display: none;

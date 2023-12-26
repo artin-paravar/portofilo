@@ -11,8 +11,8 @@
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 998;
     width: 400px;
-    z-index: 999;
     bottom: 0;
     background-color: var(--white);
 
@@ -37,9 +37,9 @@
     }
   }
   button {
-    z-index: 999;
     position: fixed;
     width: 50px;
+    z-index: 998;
     height: 50px;
     border-radius: 50%;
     top: 25px;

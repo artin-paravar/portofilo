@@ -8,6 +8,8 @@ import Hero from "./components/hero/hero.jsx";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import "./components/cursor/cursor.scss";
+import { infinity } from "ldrs";
+infinity.register();
 
 const App = () => {
   const [position, setPostion] = useState({ x: 0, y: 0 });
@@ -38,42 +40,71 @@ const App = () => {
   const textenter = () => setsurcorvarint("text");
   const textleave = () => setsurcorvarint("default");
 
+  const [isloading, setloading] = useState(true);
+  useEffect(() => {
+    const preloader = () => {
+      setTimeout(() => {
+        setloading(false);
+      }, 500);
+    };
+    preloader();
+  }, []);
+
   return (
     <div>
-      <motion.div
-        className="cursor"
-        animate={cursorvarint}
-        variants={variants}
-        transition={{ transition: 0, duration: 0.1 }}
-      ></motion.div>
-      <section id="صفحه اصلی">
-        <Navbar />
-        <Hero textenter={textenter} textleave={textleave} />
-      </section>
-      <section>
-        <Parallax type="services" textenter={textenter} textleave={textleave} />
-      </section>
-      <section id="خدمات">
-        <Services textenter={textenter} textleave={textleave} />
-      </section>
-      <section>
-        <Parallax
-          type="portfolio"
-          textenter={textenter}
-          textleave={textleave}
-        />
-      </section>
-      <Portofilo textenter={textenter} textleave={textleave} />
-      <section
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-        id="ارتباط با من"
-      >
-        <Contact textenter={textenter} textleave={textleave} />
-      </section>
+      {isloading ? (
+        <div className="preloader" id="preloader">
+          <l-infinity
+            size="100"
+            stroke="4"
+            stroke-length="0.15"
+            bg-opacity="0.1"
+            speed="1.3"
+            color="white"
+          ></l-infinity>
+        </div>
+      ) : (
+        <>
+          <motion.div
+            className="cursor"
+            animate={cursorvarint}
+            variants={variants}
+            transition={{ transition: 0, duration: 0.1 }}
+          ></motion.div>
+          <section id="صفحه اصلی">
+            <Navbar />
+            <Hero textenter={textenter} textleave={textleave} />
+          </section>
+          <section>
+            <Parallax
+              type="services"
+              textenter={textenter}
+              textleave={textleave}
+            />
+          </section>
+          <section id="خدمات">
+            <Services textenter={textenter} textleave={textleave} />
+          </section>
+          <section>
+            <Parallax
+              type="portfolio"
+              textenter={textenter}
+              textleave={textleave}
+            />
+          </section>
+          <Portofilo textenter={textenter} textleave={textleave} />
+          <section
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+            id="ارتباط با من"
+          >
+            <Contact textenter={textenter} textleave={textleave} />
+          </section>
+        </>
+      )}
     </div>
   );
 };
